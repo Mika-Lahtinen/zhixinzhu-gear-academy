@@ -45,5 +45,7 @@ extern "C" fn handle() {
 
 #[no_mangle]
 extern "C" fn state() {
-    unimplemented!();
+    let game_state = unsafe { PEBBLE_GAME.clone().expect("Get state failed.") };
+
+    msg::reply(game_state, 0).expect("State reply failed");
 }
