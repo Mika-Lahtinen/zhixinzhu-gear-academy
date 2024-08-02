@@ -43,8 +43,8 @@ pub fn get_contract_pebbles(
     }
 }
 
-// Start game.
-pub fn get_init_pebbles_start(
+// Get the remainig of the game.
+pub fn get_init_pebbles_remaining(
     difficulty: DifficultyLevel,
     pebbles_count: u32,
     max_pebbles_per_turn: u32,
