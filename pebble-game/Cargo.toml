@@ -4,13 +4,34 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-gstd = { git = "https://github.com/gear-tech/gear.git", tag = "v1.4.2" }
-pebble-game-io = { path = "io" }
+gstd.workspace = true
+pebble-game-io.workspace = true
+parity-scale-codec.workspace = true
+scale-info.workspace = true
 
 [build-dependencies]
-gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", tag = "v1.4.2" }
-pebble-game-io = { path = "io" }
+gear-wasm-builder.workspace = true
+pebble-game-io.workspace = true
 
 [dev-dependencies]
-gtest = { git = "https://github.com/gear-tech/gear.git", tag = "v1.4.2" }
-pebble-game-io = { path = "io" }
+gtest.workspace = true
+gclient.workspace = true
+tokio.workspace = true
+
+# It's necessary to include all metawasm crates in the workspace section, otherwise they'll be
+# ignored by Cargo and won't be built.
+[workspace]
+# members = ["state", "xtask"]
+
+[workspace.dependencies]
+gstd = "1.4.2"
+gmeta = "1.4.2"
+gear-wasm-builder = "1.4.2"
+gtest = "1.4.2"
+gclient = "1.4.2"
+pebble-game-io ={ path = "io" }
+tokio = "1"
+xshell = "0.2"
+anyhow = "1"
+parity-scale-codec = { version = "3", default-features = false }
+scale-info = { version = "2", default-features = false }
