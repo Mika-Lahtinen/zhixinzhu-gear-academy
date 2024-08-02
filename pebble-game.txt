@@ -1,0 +1,4 @@
+Repository for the homework: https://github.com/Mika-Lahtinen/zhixinzhu-gear-academy
+Link to the pebble-game homework: https://github.com/Mika-Lahtinen/zhixinzhu-gear-academy/pebble-game
+
+Contract on Testnet: 0x4095a3f2715e0e2c564b4a2bdcc59a710c9747c3964983068bcde5b02b8a38df
