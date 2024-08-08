@@ -1,0 +1,28 @@
+[workspace.package]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+resolver = "2"
+members = [
+    "wordle",
+    "gamessession", 
+]
+
+[workspace.dependencies]
+gstd = "1.4.2"
+gmeta = "1.4.2"
+gtest = "1.4.2"
+gclient = "1.4.2"
+tokio = "1"
+gear-wasm-builder = "1.4.2"
+parity-scale-codec = { version = "3", default-features = false }
+scale-info = { version = "2", default-features = false }
+
+
+gamessession-io.path = "gamessession/io"
+wordle-io.path="wordle/io"
+gamessession.path = "gamesession"
+wordle.path="wordle"
