@@ -1,0 +1,7 @@
+Repository for the homework: https://github.com/Mika-Lahtinen/zhixinzhu-gear-academy
+Link to the wordle-game homework: https://github.com/Mika-Lahtinen/zhixinzhu-gear-academy/wordle-game
+
+Contracts on testnet:
+Wordle contract: 0x8f222940138496357494678461ed3e3384f7bcf04a1dac268017b96697b8c8d9
+Games Session contract: 0xabf1608d19da80488ca4b6237b288650557c221cb383e96e5253402565bc591d
+
